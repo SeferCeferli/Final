@@ -1,0 +1,399 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header-top {
+  background: #1c3459;
+  padding: 18px 0;
+}
+
+.header-top .container .row .topbar-menu {
+  line-height: 27px;
+}
+
+.header-top .container .row .topbar-menu .align-self-center li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.header-top .container .row .topbar-menu .align-self-center li a {
+  display: inline-block;
+  margin: 0 8px;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header-top .container .row .topbar-social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-top .container .row .topbar-social .topbar-date {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 30px;
+  font-size: 14px;
+  border-right: 1px solid #495d7a;
+  padding-right: 20px;
+  margin-right: 17px;
+  font-family: "Rubik", sans-serif;
+}
+
+.header-top .container .row .topbar-social .topbar-date i {
+  margin-right: 6px;
+}
+
+.header-top .container .row .topbar-social .social-area {
+  display: flex;
+}
+
+.header-top .container .row .topbar-social .social-area li {
+  margin: 0 6px;
+}
+
+.header-top .container .row .topbar-social .social-area li .facebook-icon {
+  background: #3b5998;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  transition: linear 0.3s;
+}
+
+.header-top .container .row .topbar-social .social-area li .facebook-icon:hover {
+  color: #097bed;
+}
+
+.header-top .container .row .topbar-social .social-area li .twitter-icon {
+  background: #55acee;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  transition: linear 0.3s;
+}
+
+.header-top .container .row .topbar-social .social-area li .twitter-icon:hover {
+  color: #097bed;
+}
+
+.header-top .container .row .topbar-social .social-area li .youtube-icon {
+  background: #d42428;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  transition: linear 0.3s;
+}
+
+.header-top .container .row .topbar-social .social-area li .youtube-icon:hover {
+  color: #097bed;
+}
+
+.header-top .container .row .topbar-social .social-area li .instagram-icon {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  transition: linear 0.3s;
+}
+
+.header-top .container .row .topbar-social .social-area li .instagram-icon:hover {
+  color: #097bed;
+}
+
+.header-top .container .row .topbar-social .social-area li .google-icon {
+  background: #dc4e41;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  transition: linear 0.3s;
+}
+
+.header-top .container .row .topbar-social .social-area li .google-icon:hover {
+  color: #097bed;
+}
+
+.header-bottom {
+  padding: 25px 0px;
+}
+
+.header-bottom .container .row .top-logo .main-logo {
+  display: block;
+  line-height: 78.63px;
+  margin-left: 13px;
+}
+
+.header-bottom .container .row .right-reklam .logo-right img {
+  max-width: 100%;
+}
+
+.navbar {
+  padding: 8px 16px !important;
+  background: #097bed !important;
+}
+
+.navbar .container .logo {
+  display: none;
+}
+
+.navbar .container .mobile-icon {
+  display: none;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item {
+  position: relative;
+  z-index: 0;
+  padding-right: 14px;
+  transition: all 0.4s ease-in;
+  line-height: 52px;
+  left: 4px;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar .container .navbar-collapse .nav-right-part {
+  margin-left: 20px;
+}
+
+.navbar .container .navbar-collapse .nav-right-part .menu-search-inner {
+  background: #086ed5 !important;
+}
+
+.navbar .container .navbar-collapse .nav-right-part .menu-search-inner ::placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar .container .navbar-collapse .nav-right-part .menu-search-inner input {
+  height: 48px;
+  padding: 0 0 0 20px;
+  border: 0 !important;
+  background: transparent;
+}
+
+.navbar .container .navbar-collapse .nav-right-part .menu-search-inner button {
+  height: 48px;
+  line-height: 48px;
+  border: 0 !important;
+  background: transparent;
+  padding: 0 18px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .header-top .container .row .topbar-menu {
+    margin-left: -7px;
+  }
+  .header-top .container .row .topbar-menu .align-self-center li {
+    margin: unset;
+  }
+  .header-top .container .row .topbar-social .topbar-date {
+    display: none;
+  }
+  .header-top .container .row .topbar-social .social-area li {
+    margin: 0 4px;
+  }
+  .header-bottom {
+    display: none;
+  }
+  .navbar .container .mobile-icon {
+    display: block;
+    position: relative;
+    left: 31%;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .navbar .container .navbar-toggler {
+    border: none;
+  }
+  .navbar .container .navbar-toggler span {
+    color: #ffffff !important;
+    margin-right: -10px;
+  }
+  .navbar .container .navbar-collapse .navbar-nav .nav-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-top .container .row {
+    justify-content: center;
+  }
+  .header-top .container .row .topbar-menu {
+    margin: unset;
+    text-align: center;
+  }
+  .header-top .container .row .topbar-social {
+    justify-content: center;
+    margin-top: 8px;
+  }
+  .navbar .container {
+    padding: 12px;
+  }
+  .navbar .container .mobile-icon {
+    position: relative;
+    left: 23%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar .container .mobile-icon {
+    position: relative;
+    left: 27%;
+  }
+  .navbar .container .main-logo img {
+    width: 140px;
+  }
+}
