@@ -140,6 +140,23 @@
                 transform: perspective(1px) translateZ(0);
                 border-radius: 5px;
                 font-family: $font-family;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: #283f62;
+                    transform: scaleX(0);
+                    transform-origin: 0 50%;
+                    transition-duration: 0.4s;
+                }
+                &:hover ::before {
+                    transform: scaleX(1);
+                    background: #283f62;
+                }
                }
            }
         }
