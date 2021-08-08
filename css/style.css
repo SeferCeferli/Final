@@ -365,6 +365,9 @@ table {
   .navbar .container .navbar-collapse .navbar-nav .nav-item {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
+  .navbar .container .navbar-collapse .nav-right-part .menu-search-inner button {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1669,4 +1672,174 @@ table {
 
 #Video-Area .container .row .single-post-wrap .details .title a:hover {
   color: rgba(255, 190, 0, 0.8);
+}
+
+#Add-Area .container a {
+  text-decoration: none;
+}
+
+#Add-Area .container a img {
+  max-width: 100%;
+}
+
+#Trending {
+  padding-bottom: 50px;
+  padding-top: 75px;
+}
+
+#Trending .container .row .section-title {
+  padding-bottom: 15px;
+  margin-bottom: 45px;
+  border-bottom: 1px solid #b3b3b3;
+  position: relative;
+}
+
+#Trending .container .row .section-title .row .title {
+  margin-bottom: 0;
+  font-size: 20px;
+  display: inline-block;
+  color: #201654;
+}
+
+#Trending .container .row .section-title .row .nxp-tab-inner {
+  text-align: right !important;
+}
+
+#Trending .container .row .section-title .row .nxp-tab-inner .nav-tabs .nav-link:focus, #Trending .container .row .section-title .row .nxp-tab-inner .nav-tabs .nav-link:hover {
+  border-color: white;
+}
+
+#Trending .container .row .section-title .row .nxp-tab-inner .nav-tabs {
+  display: inline-block;
+  border: 0 !important;
+}
+
+#Trending .container .row .section-title .row .nxp-tab-inner .nav-tabs .nav-items {
+  margin: 0 10px;
+  display: inline-block;
+  margin-bottom: -1px;
+}
+
+#Trending .container .row .section-title .row .nxp-tab-inner .nav-tabs .nav-items:hover {
+  border-color: white;
+}
+
+#Trending .container .row .section-title .row .nxp-tab-inner .nav-tabs .nav-items .nav-link {
+  color: #495057;
+  display: block;
+  overflow: hidden;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap {
+  position: relative;
+  margin-bottom: 30px;
+  transition: 0.4s;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap:hover .thumb img {
+  transform: scale(1.06);
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap:hover .thumb::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap .thumb {
+  position: relative;
+  margin-bottom: 0px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap .thumb::before {
+  content: "";
+  background: linear-gradient(to top, rgba(32, 22, 84, 0.38) 52%, rgba(0, 0, 100, 0));
+  height: 75%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+  width: 100%;
+  z-index: 4;
+  transition: 0.4s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap .thumb::after {
+  content: "";
+  background: linear-gradient(to top, rgba(32, 22, 84, 0.6) 52%, rgba(0, 0, 100, 0));
+  height: 70%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+  width: 100%;
+  z-index: 3;
+  transition: 0.4s;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap .thumb img {
+  max-width: 100%;
+  min-height: 119px;
+  transition: 0.8s;
+  transform: scale(1.01);
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap .thumb .tag-base {
+  background: #097bed;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 14px;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: linear 0.2s;
+  position: absolute;
+  left: 17px;
+  top: 19px;
+  z-index: 3;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap .thumb .tag-base:hover {
+  background: #097bed;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap .details {
+  position: absolute;
+  bottom: 0;
+  padding: 18px 20px;
+  z-index: 4;
+  background-color: unset;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap .details .post-meta-single {
+  margin-bottom: 8px;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap .details .post-meta-single ul li {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  margin: unset;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap .details .post-meta-single ul li i {
+  color: #fff;
+  margin-right: 5px;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap .title {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  transition: linear 0.3s;
+}
+
+#Trending .container .row .tab-content .tab-pane .row .single-post-wrap .title a:hover {
+  color: #ffbe00;
 }
