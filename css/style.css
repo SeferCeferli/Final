@@ -1843,3 +1843,944 @@ table {
 #Trending .container .row .tab-content .tab-pane .row .single-post-wrap .title a:hover {
   color: #ffbe00;
 }
+
+.footer {
+  padding-top: 95px;
+  background: #102950;
+}
+
+.footer .container .row .widget {
+  margin-bottom: 70px;
+}
+
+.footer .container .row .widget .widget-title {
+  color: #fff;
+  margin-bottom: 27px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3380952381;
+  font-family: "Rubik", sans-serif;
+}
+
+.footer .container .row .widget .widget_about {
+  margin-top: -7px;
+}
+
+.footer .container .row .widget .widget_about p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Rubik", sans-serif;
+  line-height: 29px;
+}
+
+.footer .container .row .widget .widget_about .social-area {
+  display: flex;
+  margin-top: 24px;
+}
+
+.footer .container .row .widget .widget_about .social-area li {
+  margin: 0 6px;
+}
+
+.footer .container .row .widget .widget_about .social-area li .facebook-icon {
+  background: #3b5998;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  transition: linear 0.3s;
+}
+
+.footer .container .row .widget .widget_about .social-area li .facebook-icon:hover {
+  color: #097bed;
+}
+
+.footer .container .row .widget .widget_about .social-area li .twitter-icon {
+  background: #55acee;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  transition: linear 0.3s;
+}
+
+.footer .container .row .widget .widget_about .social-area li .twitter-icon:hover {
+  color: #097bed;
+}
+
+.footer .container .row .widget .widget_about .social-area li .youtube-icon {
+  background: #d42428;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  transition: linear 0.3s;
+}
+
+.footer .container .row .widget .widget_about .social-area li .youtube-icon:hover {
+  color: #097bed;
+}
+
+.footer .container .row .widget .widget_about .social-area li .instagram-icon {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  transition: linear 0.3s;
+}
+
+.footer .container .row .widget .widget_about .social-area li .instagram-icon:hover {
+  color: #097bed;
+}
+
+.footer .container .row .widget .widget_about .social-area li .google-icon {
+  background: #dc4e41;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  transition: linear 0.3s;
+}
+
+.footer .container .row .widget .widget_about .social-area li .google-icon:hover {
+  color: #097bed;
+}
+
+.footer .container .row .widget .tagcloud a {
+  margin-right: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: 0.4s;
+  border: 1px solid #393e75;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 15px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: linear 0.2s;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+.footer .container .row .widget .tagcloud a:hover {
+  background-color: #097bed;
+}
+
+.footer .container .row .widget .contact_info_list li {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 28px;
+  position: relative;
+  margin-bottom: 10px;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.7;
+}
+
+.footer .container .row .widget .contact_info_list li i {
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.footer .container .row .widget .Latest-post-list-wrap {
+  margin-bottom: 17px;
+}
+
+.footer .container .row .widget .Latest-post-list-wrap .Gallery {
+  display: flex;
+}
+
+.footer .container .row .widget .Latest-post-list-wrap .Gallery .gallery-left {
+  margin-right: 13px;
+  position: relative;
+}
+
+.footer .container .row .widget .Latest-post-list-wrap .Gallery .gallery-left img {
+  max-width: 75px;
+}
+
+.footer .container .row .widget .Latest-post-list-wrap .Gallery .gallery-body .details .post-meta-single ul {
+  margin-bottom: 10px;
+}
+
+.footer .container .row .widget .Latest-post-list-wrap .Gallery .gallery-body .details .post-meta-single ul li {
+  font-size: 14px;
+  color: #201654;
+  font-family: "Rubik", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .container .row .widget .Latest-post-list-wrap .Gallery .gallery-body .details .post-meta-single ul li i {
+  margin-right: 5px;
+}
+
+.footer .container .row .widget .Latest-post-list-wrap .Gallery .gallery-body .details .title a {
+  text-decoration: none;
+  color: #201654;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  display: inline-block;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .container .row .footer-bottom {
+  border-top: 1px solid #586a85;
+  padding: 25px 0;
+}
+
+.footer .container .row .footer-bottom ul li {
+  display: inline-block;
+  position: relative;
+  padding: 0 15px 0 10px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+}
+
+.footer .container .row .footer-bottom ul li a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  font-family: "Rubik", sans-serif;
+}
+
+.footer .container .row .footer-bottom ul li a::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.footer .container .row .footer-bottom p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+  margin-top: 19px;
+  font-family: "Rubik", sans-serif;
+}
+
+#Page-Title {
+  padding: 25px 0 22px;
+  background: #e6f2fd;
+}
+
+#Page-Title .container .row .breadcrumb-inner .page-title {
+  margin-bottom: 5px;
+  font-family: "Rubik", sans-serif;
+  color: #201654;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3380952381;
+}
+
+#Page-Title .container .row .breadcrumb-inner .page-list li {
+  font-size: 16px;
+  color: #565872;
+  font-weight: 400;
+  display: inline-block;
+}
+
+#Page-Title .container .row .breadcrumb-inner .page-list li a {
+  position: relative;
+  margin-right: 9px;
+  padding-right: 11px;
+  color: #097bed;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+#Page-Title .container .row .breadcrumb-inner .page-list li a::after {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  content: "/";
+  height: 15px;
+  width: 1px;
+}
+
+#Tech-Page {
+  padding-bottom: 80px;
+}
+
+#Tech-Page .container .row .pd-top-50 {
+  padding-top: 50px;
+}
+
+#Tech-Page .container .row nav {
+  margin-top: 24px;
+}
+
+#Tech-Page .container .row nav ul {
+  display: inline-flex;
+  text-align: center;
+  margin: 0;
+}
+
+#Tech-Page .container .row nav ul li {
+  margin: 0 5px;
+}
+
+#Tech-Page .container .row nav ul li a {
+  height: 50px;
+  width: 50px;
+  line-height: 48px;
+  padding: 0;
+  background: #f3f4f9;
+  border-radius: 4px;
+  border: 0;
+  color: #201654;
+  box-shadow: none;
+  background: transparent;
+  border: 2px solid #e3e3e3;
+  transition: linear 0.3s;
+  text-decoration: none;
+}
+
+#Tech-Page .container .row nav ul li a:hover {
+  background: #097bed;
+  color: #fff;
+  border: #097bed;
+}
+
+#Tech-Page .container .row .single-post-wrap {
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fafafa;
+  margin-bottom: 30px;
+  transition: 0.4s;
+  position: relative;
+}
+
+#Tech-Page .container .row .single-post-wrap:hover {
+  box-shadow: 0px 3px 10px 0px rgba(188, 181, 181, 0.9);
+  background: #fafafa;
+}
+
+#Tech-Page .container .row .single-post-wrap:hover .thumb img {
+  transform: scale(1.06);
+}
+
+#Tech-Page .container .row .single-post-wrap .thumb {
+  position: relative;
+}
+
+#Tech-Page .container .row .single-post-wrap .thumb img {
+  max-width: 100%;
+  transition: 0.8s;
+  transform: scale(1.01);
+}
+
+#Tech-Page .container .row .single-post-wrap .details {
+  padding: 25px;
+}
+
+#Tech-Page .container .row .single-post-wrap .details .post-meta-single {
+  padding-top: 4px;
+  margin-bottom: 24px;
+}
+
+#Tech-Page .container .row .single-post-wrap .details .post-meta-single ul li {
+  display: inline-block;
+  margin-right: 6px;
+  color: #201654;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+}
+
+#Tech-Page .container .row .single-post-wrap .details .post-meta-single ul li i {
+  margin-right: 5px;
+}
+
+#Tech-Page .container .row .single-post-wrap .details .post-meta-single ul li a {
+  background: #e6f2fd;
+  color: #097bed;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 14px;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+#Tech-Page .container .row .single-post-wrap .details .title {
+  font-family: "Rubik", sans-serif;
+  color: #201654;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3380952381;
+}
+
+#Tech-Page .container .row .single-post-wrap .details .title a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  transition: linear 0.3s;
+}
+
+#Tech-Page .container .row .single-post-wrap .details .title a:hover {
+  color: #097bed;
+}
+
+#Tech-Page .container .row .single-post-wrap .details p {
+  margin-bottom: 0;
+  margin-top: 16px;
+  color: #201654;
+  font-family: "Rubik", sans-serif;
+  line-height: 28px;
+}
+
+#Tech-Page .container .row .single-post-wrap .details .btn-base {
+  padding: 0 17px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 5px;
+  font-weight: 400;
+  background: #097bed;
+  transition: all 0.5s ease;
+  transform: perspective(1px) translateZ(0);
+  color: #fff;
+  border: 0;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+#Tech-Page .container .row .single-post-wrap .details .btn-base::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #283f62;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-duration: 0.4s;
+}
+
+#Tech-Page .container .row .single-post-wrap .details .btn-base:hover::before {
+  transform: scaleX(1);
+  border-radius: 5px;
+}
+
+#Tech-Page .container .row .Latest-title {
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+#Tech-Page .container .row .Latest-title .title {
+  margin-bottom: 0;
+  font-size: 20px;
+  display: inline-block;
+  color: #201654;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+#Tech-Page .container .row .custom-gutters-14 {
+  padding: 0 8px;
+  margin-bottom: 55px;
+}
+
+#Tech-Page .container .row .custom-gutters-14 .single-category-inner {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+#Tech-Page .container .row .custom-gutters-14 .single-category-inner::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+  width: 100%;
+  z-index: 3;
+  transition: 0.4s;
+}
+
+#Tech-Page .container .row .custom-gutters-14 .single-category-inner img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+#Tech-Page .container .row .custom-gutters-14 .single-category-inner .tag-base {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  margin-top: -14px;
+  z-index: 4;
+  border-radius: 30px;
+  padding: 0 25px;
+  background: #097bed;
+  color: #fff;
+  text-decoration: none;
+  height: 28px;
+  line-height: 28px;
+  transition: linear 0.3s;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+}
+
+#Tech-Page .container .row .custom-gutters-14 .single-category-inner .tag-base:hover {
+  background: #0f68c0;
+}
+
+#Tech-Page .container .row .widget-social {
+  margin-bottom: 55px;
+}
+
+#Tech-Page .container .row .widget-social .widget-title {
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #201654;
+  font-size: 18px;
+  line-height: 1.3380952381;
+}
+
+#Tech-Page .container .row .widget-social .social-area li {
+  margin: 0 6px;
+  display: inline-block;
+}
+
+#Tech-Page .container .row .widget-social .social-area li:first-child {
+  margin-left: 0;
+}
+
+#Tech-Page .container .row .widget-social .social-area li a {
+  font-size: 14px;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  font-family: "Rubik", sans-serif;
+}
+
+#Tech-Page .container .row .widget-social .social-area li a:hover {
+  color: #097bed;
+}
+
+#Tech-Page .container .row .widget-social .social-area li a i {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  color: #fff;
+}
+
+#Tech-Page .container .row .widget-social .social-area li a .fa-facebook {
+  background: #3b5998;
+}
+
+#Tech-Page .container .row .widget-social .social-area li a .fa-twitter {
+  background: #55acee;
+}
+
+#Tech-Page .container .row .widget-social .social-area li a .fa-youtube-play {
+  background: #d42428;
+}
+
+#Tech-Page .container .row .widget-social .social-area li a .fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+#Tech-Page .container .row .widget-social .social-area li a .fa-google-plus {
+  background: #dc4e41;
+}
+
+#Tech-Page .container .row .section-title {
+  position: relative;
+  padding-bottom: 34px;
+  width: 262.5px;
+}
+
+#Tech-Page .container .row .section-title .title {
+  margin-bottom: 0;
+  font-size: 20px;
+  display: inline-block;
+  color: #201654;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+#Tech-Page .container .row .section-slider {
+  position: relative;
+  margin-bottom: 55px;
+}
+
+#Tech-Page .container .row .section-slider .item .trending-post .single-post-wrap {
+  margin-bottom: 25px;
+  position: relative;
+  transition: 0.4s;
+}
+
+#Tech-Page .container .row .section-slider .item .trending-post .single-post-wrap .thumb {
+  position: relative;
+  margin-bottom: 0px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#Tech-Page .container .row .section-slider .item .trending-post .single-post-wrap .thumb img {
+  transition: 0.8s;
+  transform: scale(1.01);
+  min-height: 119px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+#Tech-Page .container .row .section-slider .item .trending-post .single-post-wrap .thumb::before {
+  content: "";
+  background: linear-gradient(to top, rgba(32, 22, 84, 0.38) 52%, rgba(0, 0, 100, 0));
+  height: 75%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+  width: 100%;
+  z-index: 4;
+  transition: 0.4s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#Tech-Page .container .row .section-slider .item .trending-post .single-post-wrap .thumb::after {
+  content: "";
+  background: linear-gradient(to top, rgba(32, 22, 84, 0.6) 52%, rgba(0, 0, 100, 0));
+  height: 70%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+  width: 100%;
+  z-index: 3;
+  transition: 0.4s;
+}
+
+#Tech-Page .container .row .section-slider .item .trending-post .single-post-wrap .details {
+  position: absolute;
+  bottom: 0;
+  padding: 18px 20px;
+  z-index: 4;
+}
+
+#Tech-Page .container .row .section-slider .item .trending-post .single-post-wrap .details .post-meta-single {
+  margin-bottom: 8px;
+}
+
+#Tech-Page .container .row .section-slider .item .trending-post .single-post-wrap .details .post-meta-single p {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 7px;
+}
+
+#Tech-Page .container .row .section-slider .item .trending-post .single-post-wrap .details .post-meta-single p i {
+  margin-right: 5px;
+}
+
+#Tech-Page .container .row .section-slider .item .trending-post .single-post-wrap .details h6 a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+#Tech-Page .container .row .section-slider .icon-slider {
+  display: inline-block;
+  position: absolute;
+  top: -54px;
+  right: -4px;
+}
+
+#Tech-Page .container .row .section-slider .icon-slider button {
+  margin-left: 21px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  color: #097bed;
+  font-size: 20px;
+}
+
+#Tech-Page .container .row .Latest-post-list-wrap {
+  margin-bottom: 17px;
+}
+
+#Tech-Page .container .row .Latest-post-list-wrap .Gallery {
+  display: flex;
+}
+
+#Tech-Page .container .row .Latest-post-list-wrap .Gallery .gallery-left {
+  margin-right: 13px;
+  position: relative;
+}
+
+#Tech-Page .container .row .Latest-post-list-wrap .Gallery .gallery-left img {
+  max-width: 75px;
+}
+
+#Tech-Page .container .row .Latest-post-list-wrap .Gallery .gallery-body .details .post-meta-single ul {
+  margin-bottom: 10px;
+}
+
+#Tech-Page .container .row .Latest-post-list-wrap .Gallery .gallery-body .details .post-meta-single ul li {
+  font-size: 14px;
+  color: #201654;
+  font-family: "Rubik", sans-serif;
+}
+
+#Tech-Page .container .row .Latest-post-list-wrap .Gallery .gallery-body .details .post-meta-single ul li i {
+  margin-right: 5px;
+}
+
+#Tech-Page .container .row .Latest-post-list-wrap .Gallery .gallery-body .details .title a {
+  text-decoration: none;
+  color: #201654;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  display: inline-block;
+  line-height: 21px;
+}
+
+#Tech-Page .container .row .nxp-tab-inner .nav-tabs {
+  border: 1px solid #f1f3f5 !important;
+  line-height: 1;
+}
+
+#Tech-Page .container .row .nxp-tab-inner .nav-tabs .nav-item {
+  margin: 0;
+  display: inline-block;
+  border-right: 1px solid #f1f3f5;
+  line-height: 1;
+  width: 33.33%;
+}
+
+#Tech-Page .container .row .nxp-tab-inner .nav-tabs .nav-item .active {
+  background: #097bed !important;
+  color: #fff !important;
+}
+
+#Tech-Page .container .row .nxp-tab-inner .nav-tabs .nav-item .nav-link {
+  border-radius: unset;
+  color: inherit;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  border: 0 !important;
+  padding: 0;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+#Tech-Page .container .row .single-newsletter-inner {
+  padding: 22px 25px 30px 25px;
+  border-radius: 5px;
+  background: #097bed;
+  margin-top: 64px;
+}
+
+#Tech-Page .container .row .single-newsletter-inner h5 {
+  color: #fff;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  line-height: 1.3380952381;
+}
+
+#Tech-Page .container .row .single-newsletter-inner p {
+  color: #fff;
+  margin-bottom: 28px;
+  font-family: "Rubik", sans-serif;
+  line-height: 28px;
+}
+
+#Tech-Page .container .row .single-newsletter-inner .single-input-inner {
+  margin-bottom: 12px;
+}
+
+#Tech-Page .container .row .single-newsletter-inner .single-input-inner ::placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-family: "Rubik", sans-serif;
+}
+
+#Tech-Page .container .row .single-newsletter-inner .single-input-inner input {
+  background: transparent;
+  color: #fff;
+  height: 48px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  padding: 0 18px;
+  font-size: inherit;
+}
+
+#Tech-Page .container .row .single-newsletter-inner a {
+  cursor: pointer;
+  background: #fff;
+  color: #201654;
+  border: 0;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 35px;
+  overflow: hidden;
+  position: relative;
+  border: 0;
+  transition: all 0.5s ease;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+}
+
+#Tech-Page .container .row .single-newsletter-inner a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #283f62;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-duration: 0.4s;
+}
+
+#Tech-Page .container .row .single-newsletter-inner a:hover ::before {
+  transform: scaleX(1);
+  background: #283f62;
+}
+
+#Tech-Page .container .add-area a {
+  text-decoration: none;
+}
+
+#Tech-Page .container .add-area a img {
+  max-width: 100%;
+}
+
+#Tech-Page .container .row .single-post-wrap .thumb img {
+  width: 100%;
+}
+
+#Contact {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+#Contact .container .row .news-title .elementor h2 {
+  margin: 0px 0px 30px 0px;
+  font-size: 40px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #201654;
+}
+
+#Contact .container .row .news-form .elementor-form input {
+  padding: 7px 20px;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 17px;
+  display: block;
+  min-height: 59px;
+  font-weight: 400;
+  width: 100%;
+  line-height: 1.65em;
+  color: #000000CC;
+}
+
+#Contact .container .row .news-form .elementor-form #Message {
+  margin-top: 9px;
+  margin-bottom: 20px;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 7px 20px;
+  width: 100%;
+  color: #000000CC;
+  border-style: solid;
+}
+
+#Contact .container .row .news-form .elementor-form button {
+  padding: 10px 20px;
+  background: #097bed;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  border-color: #097bed;
+  transition: linear 0.2s;
+}
+
+#Contact .container .row .news-form .elementor-form button:hover {
+  border-radius: 7px;
+}
+
+#Adress {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+#Adress .container .row .col-lg-4 {
+  padding-bottom: 21px;
+}
+
+#Adress .container .row .col-lg-4 .adress-widget {
+  background: #e4e4e4;
+  padding: 20px;
+  height: 100%;
+}
+
+#Adress .container .row .col-lg-4 .adress-widget .icon-widget {
+  margin-bottom: 15px;
+}
+
+#Adress .container .row .col-lg-4 .adress-widget .icon-widget i {
+  font-size: 40px;
+  color: #201654;
+}
+
+#Adress .container .row .col-lg-4 .adress-widget .text-widget h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#Adress .container .row .col-lg-4 .adress-widget .text-widget p {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  padding-top: 10px;
+  color: #000000CC;
+}
+
+@media screen and (max-width: 1200px) {
+  #Contact .container .row .news-form .elementor-form button {
+    margin-bottom: 30px;
+  }
+}
