@@ -157,15 +157,22 @@
         }
     }
 }
+
 .navbar{
     padding: 8px 16px !important;
     background: $primary-color !important;
+
     .container{
+        .modal-container{
+            display: none;
+        }
         .logo{
             display: none;
         }
-        .mobile-icon{
-            display: none;
+        .nav-icon{
+            .mobile-icon{
+                display: none;
+            }
         }
         .navbar-toggler{
             span{
@@ -226,6 +233,14 @@
             }
         }
     }
+}
+.slide{
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
 @media screen and (max-width: 1200px) {
     .header-top{
@@ -436,11 +451,47 @@
 .navbar{
 
     .container{
-        .mobile-icon{
-            display: block;
+        .modal-container{
             position: relative;
-             left: 31%;;
-            color: $background;
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            height: 100%;
+            width: 100%;
+            z-index: 2000;
+            .close-icon{
+                position: absolute;
+                top: 66%;
+                right: 7%;
+                color: white;
+                opacity: .5;
+                .fa-times{
+                    font-size: 23px;
+                }
+            }
+            .search-modal{
+                margin-top: 45%;
+            }
+            .input-group{
+                margin-left: 10px;
+            }
+            input{
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+            }
+            span{
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                padding: 0.675rem .75rem;
+
+
+            }
+        }
+        .mobile-icon{
+            color: #fff;
+            display: inline-block !important;
         }
         .navbar-toggler{
             border: none;
@@ -453,7 +504,7 @@
             span{
 
                 color: #ffffff !important;
-                margin-right: -10px;
+                // margin-right: -10px;
                 
             }
         }
@@ -468,6 +519,7 @@
             }
             .nav-right-part{
                 .menu-search-inner{
+                    display: none;
                     ::placeholder{
 
                     }
@@ -578,10 +630,48 @@
     .navbar{
     
         .container{
+            .modal-container{
+                position: relative;
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.7);
+                height: 100%;
+                width: 100%;
+                z-index: 2000;
+                .close-icon{
+                    position: absolute;
+                    top: 69%;
+                    right: 9%;
+                    color: white;
+                    opacity: .5;
+                    .fa-times{
+                        font-size: 23px;
+                    }
+                }
+                .search-modal{
+                    margin-top: 63%;
+                }
+                .input-group{
+                    margin-left: 10px;
+                }
+                input{
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                }
+                span{
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    padding: 0.675rem .75rem;
+    
+    
+                }
+            }
             padding: 12px;
             .mobile-icon{
-                position: relative;
-                left: 23%;
+                // position: relative;
+                // left: 23%;
             }
             .navbar-toggler{
                 span{
@@ -702,9 +792,46 @@
     .navbar{
     
         .container{
-            .mobile-icon{
+            .modal-container{
                 position: relative;
-                left: 27%;
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.7);
+                height: 100%;
+                width: 100%;
+                z-index: 2000;
+                .close-icon{
+                    position: absolute;
+                    top: 65%;
+                    right: 3%;
+                    color: white;
+                    opacity: .5;
+                    .fa-times{
+                        font-size: 23px;
+                    }
+                }
+                .search-modal{
+                    margin-top: 63%;
+                }
+                .input-group{
+                    margin-left: 2px;
+                }
+                input{
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                }
+                span{
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    padding: 0.675rem .75rem;
+    
+    
+                }
+            }
+            .mobile-icon{
+
             }
             .main-logo{
                 img{

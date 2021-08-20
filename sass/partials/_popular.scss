@@ -1,28 +1,26 @@
-#popular-news{
+#popular-news {
     background: #f7fbff;
     padding-top: 80px;
     padding-bottom: 60px;
-    .container{
-        .row{
-            .single-post-wrap{
+    .container {
+        .row {
+            .single-post-wrap {
                 position: relative;
                 margin-bottom: 30px;
                 transition: 0.4s;
-                &:hover .thumb img{
+                &:hover .thumb img {
                     transform: scale(1.06);
-
                 }
-                &:hover .thumb::before{
+                &:hover .thumb::before {
                     visibility: visible;
                     opacity: 1;
                 }
-                .thumb{
+                .thumb {
                     position: relative;
                     margin-bottom: 27px;
                     overflow: hidden;
                     border-radius: 5px;
-                   
-                    &::after{
+                    &::after {
                         content: "";
                         background: linear-gradient(to top, rgba(32, 22, 84, 0.6) 52%, rgba(0, 0, 100, 0));
                         height: 70%;
@@ -34,7 +32,7 @@
                         z-index: 3;
                         transition: 0.4s;
                     }
-                    &::before{
+                    &::before {
                         content: "";
                         background: linear-gradient(to top, rgba(32, 22, 84, 0.38) 52%, rgba(0, 0, 100, 0));
                         height: 75%;
@@ -48,12 +46,12 @@
                         visibility: hidden;
                         opacity: 0;
                     }
-                    img{
+                    img {
                         max-width: 100%;
                         transition: 0.8s;
                         transform: scale(1.01);
                     }
-                    .tag-base{
+                    .tag-base {
                         position: absolute;
                         left: 17px;
                         top: 19px;
@@ -68,72 +66,70 @@
                         border-radius: 3px;
                         font-size: 15px;
                         font-family: $font-family;
-                      
                     }
                 }
-                .details{
+                .details {
                     position: absolute;
                     bottom: 0;
                     padding: 18px 20px;
                     z-index: 4;
-                    .post-meta-single{
+                    .post-meta-single {
                         margin-bottom: 8px;
-                        p{
+                        p {
                             line-height: 20px;
                             color: $third-color;
                             font-size: $font-size;
                             font-family: $font-family;
-                            i{
+                            i {
                                 margin-right: 5px;
                             }
                         }
                     }
-                    .title{
+                    .title {
                         color: $third-color;
                         font-weight: 500;
                         font-family: $font-family;
-                        a{
+                        a {
                             text-decoration: none;
                             color: $third-color;
                             line-height: 33px;
                             font-size: 24px;
                             transition: linear 0.4s;
-                            &:hover{
+                            &:hover {
                                 color: #FFBE00;
-                              }
+                            }
                         }
                     }
                 }
             }
-            .Latest-post-list-wrap{
+            .Latest-post-list-wrap {
                 margin-bottom: 17px;
-                .Gallery{
+                .Gallery {
                     display: flex;
-                    .gallery-left{
+                    .gallery-left {
                         margin-right: 13px;
                         position: relative;
-                        img{
+                        img {
                             max-width: 75px;
                         }
                     }
-                    .gallery-body{
-                        .details{
-                            .post-meta-single{
-                                ul{
+                    .gallery-body {
+                        .details {
+                            .post-meta-single {
+                                ul {
                                     margin-bottom: 10px;
-                                    li{
+                                    li {
                                         font-size: 14px;
                                         color: #201654;
                                         font-family: $font-family;
-                                        i{
+                                        i {
                                             margin-right: 5px;
                                         }
                                     }
                                 }
                             }
-                            .title{
-                                
-                                a{
+                            .title {
+                                a {
                                     text-decoration: none;
                                     color: #201654;
                                     font-weight: 500;
@@ -147,22 +143,17 @@
                     }
                 }
             }
-            .nxp-tab-inner{
-                .nav-tabs{
+            .nxp-tab-inner {
+                .nav-tabs {
                     border: 1px solid #f1f3f5 !important;
                     line-height: 1;
-                    .nav-item{
+                    .nav-item {
                         margin: 0;
                         display: inline-block;
                         border-right: 1px solid #f1f3f5;
                         line-height: 1;
                         width: 33.33%;
-                        .active{
-                            background: $primary-color !important;
-                            color: #fff !important;
-
-                        }
-                        .nav-link{
+                        .nav-link {
                             border-radius: unset;
                             color: inherit;
                             font-family: $font-family;
@@ -174,8 +165,11 @@
                             line-height: 40px;
                         }
                     }
+                    .active {
+                        background: $primary-color !important;
+                        color: #fff !important;
+                    }
                 }
-
             }
         }
     }

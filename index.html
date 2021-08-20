@@ -8,6 +8,10 @@
     <script src="https://kit.fontawesome.com/b534a766ec.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,9 +32,9 @@
                     <div class="col-lg-6 col-md-7">
                         <div class="topbar-menu">
                             <ul class="align-self-center">
-                                <li><a href="">Author</a></li>
+                                <li><a href="">About Us</a></li>
                                 <li><a href="">Advertisment</a></li>
-                                <li><a href="">Member</a></li>
+                                <li><a href="">Contact</a></li>
                                 <li><a href="">Sitemap</a></li>
                             </ul>
                         </div>
@@ -38,8 +42,7 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="topbar-social">
                             <div class="topbar-date">
-                                <i class="fas fa-table"></i>
-                                 Saturday, October 7
+                                <i class="fas fa-table"></i> Saturday, October 7
                             </div>
                             <ul class="social-area">
                                 <li>
@@ -52,7 +55,7 @@
                                     <a href="" class="youtube-icon"><i class="fab fa-youtube"></i></a>
                                 </li>
                                 <li>
-                                    <a href="" class="instagram-icon"><i class="fab fa-instagram"></i></a> 
+                                    <a href="" class="instagram-icon"><i class="fab fa-instagram"></i></a>
                                 </li>
                                 <li>
                                     <a href="" class="google-icon"><i class="fab fa-google-plus-g"></i></a>
@@ -84,47 +87,69 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light  ">
             <div class="container">
                 <div class="logo d-lg-none d-block">
                     <a class="main-logo" href="index.html"><img src="image/logo-mobile.png" alt="img"></a>
                 </div>
-                <div class="mobile-icon">
-                    <i class="fas fa-search"></i>
+                <div class="nav-icon">
+                    <div class="mobile-icon modal-on">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
                 </div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link"  href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Tech</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sports</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">LifeStyle</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Fashion</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Food</a>
-                  </li>
-                </ul>
-                <div class="nav-right-part nav-right-part-desktop">
-                    <div class="menu-search-inner">
-                        <input  type="text" placeholder="Search For" >
-                        <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+                <div class="modal-container">
+                    <div class="container">
+                        <div class="close-icon">
+                            <i class="fas fa-times" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="search-modal">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-search" aria-hidden="true"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                  </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-              </div>
+              
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tech</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LifeStyle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fashion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Food</a>
+                        </li>
+                    </ul>
+                    <div class="nav-right-part nav-right-part-desktop">
+                        <div class="menu-search-inner">
+                            <input type="text" placeholder="Search For">
+                            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
         <!-- News Post Start -->
@@ -177,7 +202,7 @@
                         <div class="Latest-title  mb-4">
                             <h6 class="title">Latest News</h6>
                         </div>
-                        <div class="Latest-post-list-wrap">
+                        <div class="Latest-post">
                             <div class="Gallery">
                                 <div class="gallery-left">
                                     <img src="image/1.png" alt="img">
@@ -194,7 +219,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="Latest-post-list-wrap">
+                        <div class="Latest-post">
                             <div class="Gallery">
                                 <div class="gallery-left">
                                     <img src="image/2.png" alt="img">
@@ -211,7 +236,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="Latest-post-list-wrap">
+                        <div class="Latest-post">
                             <div class="Gallery">
                                 <div class="gallery-left">
                                     <img src="image/3.png" alt="img">
@@ -228,7 +253,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="Latest-post-list-wrap">
+                        <div class="Latest-post">
                             <div class="Gallery">
                                 <div class="gallery-left">
                                     <img src="image/4.png" alt="img">
@@ -245,7 +270,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="Latest-post-list-wrap">
+                        <div class="Latest-post">
                             <div class="Gallery">
                                 <div class="gallery-left">
                                     <img src="image/5.png" alt="img">
@@ -262,7 +287,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="Latest-post-list-wrap">
+                        <div class="Latest-post">
                             <div class="Gallery">
                                 <div class="gallery-left">
                                     <img src="image/4.png" alt="img">
@@ -279,7 +304,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="Latest-post-list-wrap">
+                        <div class="Latest-post">
                             <div class="Gallery">
                                 <div class="gallery-left">
                                     <img src="image/5.png" alt="img">
@@ -408,140 +433,420 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="trending-post">
+                                    <div class="single-post-wrap style-overlay">
+                                        <div class="thumb">
+                                            <img src="image/slider1.png" alt="img">
+                                        </div>
+                                        <div class="details">
+                                            <div class="post-meta-single">
+                                                <p><i class="fa fa-clock-o"></i>December 26, 2018</p>
+                                            </div>
+                                            <h6 class="title"><a href="blog-details.html">The FAA will test drone </a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="single-post-wrap style-overlay">
+                                        <div class="thumb">
+                                            <img src="image/slider2.png" alt="img">
+                                        </div>
+                                        <div class="details">
+                                            <div class="post-meta-single">
+                                                <p><i class="fa fa-clock-o"></i>December 26, 2018</p>
+                                            </div>
+                                            <h6 class="title"><a href="blog-details.html">Flight schedule and quarantine</a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="single-post-wrap style-overlay">
+                                        <div class="thumb">
+                                            <img src="image/slider3.png" alt="img">
+                                        </div>
+                                        <div class="details">
+                                            <div class="post-meta-single">
+                                                <p><i class="fa fa-clock-o"></i>December 26, 2018</p>
+                                            </div>
+                                            <h6 class="title"><a href="blog-details.html">Indore bags cleanest city</a></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trending-post">
+                                    <div class="single-post-wrap style-overlay">
+                                        <div class="thumb">
+                                            <img src="image/slider1.png" alt="img">
+                                        </div>
+                                        <div class="details">
+                                            <div class="post-meta-single">
+                                                <p><i class="fa fa-clock-o"></i>December 26, 2018</p>
+                                            </div>
+                                            <h6 class="title"><a href="blog-details.html">The FAA will test drone </a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="single-post-wrap style-overlay">
+                                        <div class="thumb">
+                                            <img src="image/slider2.png" alt="img">
+                                        </div>
+                                        <div class="details">
+                                            <div class="post-meta-single">
+                                                <p><i class="fa fa-clock-o"></i>December 26, 2018</p>
+                                            </div>
+                                            <h6 class="title"><a href="blog-details.html">Flight schedule and quarantine</a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="single-post-wrap style-overlay">
+                                        <div class="thumb">
+                                            <img src="image/slider3.png" alt="img">
+                                        </div>
+                                        <div class="details">
+                                            <div class="post-meta-single">
+                                                <p><i class="fa fa-clock-o"></i>December 26, 2018</p>
+                                            </div>
+                                            <h6 class="title"><a href="blog-details.html">Indore bags cleanest city</a></h6>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="icon-slider">
-                                <button type="button" role="presentation" class="owl-prev"><i class="fas fa-angle-left"></i></button>
-                                <button type="button" role="presentation" class="owl-next"><i class="fas fa-angle-right"></i></button>
-                            </div>
-                           
+
+
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6" style="padding: 0px 15px;">
+                    <div class="col-lg-3 col-sm-6 " style="padding: 0px 15px;">
                         <div class="section-title">
                             <h6 class="title">Latest News</h6>
                         </div>
-                        <div class="item">
-                            <div class="Latest-post-list-wrap">
-                                <div class="Gallery">
-                                    <div class="gallery-left">
-                                        <img src="image/1.png" alt="img">
-                                    </div>
-                                    <div class="gallery-body">
-                                        <div class="details">
-                                            <div class="post-meta-single">
-                                                <ul>
-                                                    <li><i class="fa fa-clock-o"></i>08.22.2020</li>
-                                                </ul>
+                        <div class="section-slider">
+                            <div class="item latestnews">
+                                <div class="slider2">
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/1.png" alt="img">
                                             </div>
-                                            <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/2.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">Online registration, booking for Vaishno Devi</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/3.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">Detecting technologies in airports this year</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/4.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">The FAA will drone detect-ing in airports this year</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/5.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">Thailand makes it mand-atory for tourists to stay</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider2">
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/1.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/2.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">Online registration, booking for Vaishno Devi</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/3.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">Detecting technologies in airports this year</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/4.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">The FAA will drone detect-ing in airports this year</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/5.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">Thailand makes it mand-atory for tourists to stay</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider2">
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/1.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/2.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">Online registration, booking for Vaishno Devi</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/3.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">Detecting technologies in airports this year</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/4.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">The FAA will drone detect-ing in airports this year</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Latest-post-list-wrap">
+                                        <div class="Gallery">
+                                            <div class="gallery-left">
+                                                <img src="image/5.png" alt="img">
+                                            </div>
+                                            <div class="gallery-body">
+                                                <div class="details">
+                                                    <div class="post-meta-single">
+                                                        <ul>
+                                                            <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                        </ul>
+                                                    </div>
+                                                    <h6 class="title"><a href="blog-details.html">Thailand makes it mand-atory for tourists to stay</a></h6>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="Latest-post-list-wrap">
-                                <div class="Gallery">
-                                    <div class="gallery-left">
-                                        <img src="image/2.png" alt="img">
-                                    </div>
-                                    <div class="gallery-body">
-                                        <div class="details">
-                                            <div class="post-meta-single">
-                                                <ul>
-                                                    <li><i class="fa fa-clock-o"></i>08.22.2020</li>
-                                                </ul>
-                                            </div>
-                                            <h6 class="title"><a href="blog-details.html">Online registration, booking for Vaishno Devi</a></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Latest-post-list-wrap">
-                                <div class="Gallery">
-                                    <div class="gallery-left">
-                                        <img src="image/3.png" alt="img">
-                                    </div>
-                                    <div class="gallery-body">
-                                        <div class="details">
-                                            <div class="post-meta-single">
-                                                <ul>
-                                                    <li><i class="fa fa-clock-o"></i>08.22.2020</li>
-                                                </ul>
-                                            </div>
-                                            <h6 class="title"><a href="blog-details.html">Detecting technologies in airports this year</a></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Latest-post-list-wrap">
-                                <div class="Gallery">
-                                    <div class="gallery-left">
-                                        <img src="image/4.png" alt="img">
-                                    </div>
-                                    <div class="gallery-body">
-                                        <div class="details">
-                                            <div class="post-meta-single">
-                                                <ul>
-                                                    <li><i class="fa fa-clock-o"></i>08.22.2020</li>
-                                                </ul>
-                                            </div>
-                                            <h6 class="title"><a href="blog-details.html">The FAA will drone detect-ing in airports this year</a></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Latest-post-list-wrap">
-                                <div class="Gallery">
-                                    <div class="gallery-left">
-                                        <img src="image/5.png" alt="img">
-                                    </div>
-                                    <div class="gallery-body">
-                                        <div class="details">
-                                            <div class="post-meta-single">
-                                                <ul>
-                                                    <li><i class="fa fa-clock-o"></i>08.22.2020</li>
-                                                </ul>
-                                            </div>
-                                            <h6 class="title"><a href="blog-details.html">Thailand makes it mand-atory for tourists to stay</a></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="icon-slider">
-                                <button type="button" role="presentation" class="owl-prev"><i class="fas fa-angle-left"></i></button>
-                                <button type="button" role="presentation" class="owl-next"><i class="fas fa-angle-right"></i></button>
-                            </div>
+
                         </div>
-
-
 
                     </div>
                     <div class="col-lg-3 col-sm-6" style="padding: 0px 15px;">
                         <div class="section-title">
                             <h6 class="title">What's New</h6>
                         </div>
-                        <div class="Latest-post-list-wrap">
+                        <div class="section-slider">
                             <div class="item">
-                                <div class="single-post-wrap">
-                                    <div class="thumb">
-                                        <img src="image/new1.png" alt="img">
-                                    </div>
-                                    <div class="details">
-                                        <div class="post-meta-single mb-4 pt-1">
-                                            <ul>
-                                                <li class="hover"><a class="tag-base tag-blue" href="cat-tech.html">Tech</a></li>
-                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
-                                            </ul>
+                                <div class="Latest-post-list-wrap">
+                                    <div class="section">
+                                        <div class="single-post-wrap">
+                                            <div class="thumb">
+                                                <img src="image/new1.png" alt="img">
+                                            </div>
+                                            <div class="details">
+                                                <div class="post-meta-single mb-4 pt-1">
+                                                    <ul>
+                                                        <li class="hover"><a class="tag-base tag-blue" href="cat-tech.html">Tech</a></li>
+                                                        <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                    </ul>
+                                                </div>
+                                                <h6 class="title"><a href="blog-details.html">Uttarakhand’s Hemkund Sahib yatra to start from September 4</a></h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                            </div>
                                         </div>
-                                        <h6 class="title"><a href="blog-details.html">Uttarakhand’s Hemkund Sahib yatra to start from September 4</a></h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                                     </div>
                                 </div>
-                                <div class="icon-slider">
-                                    <button type="button" role="presentation" class="owl-prev"><i class="fas fa-angle-left"></i></button>
-                                    <button type="button" role="presentation" class="owl-next"><i class="fas fa-angle-right"></i></button>
+                                <div class="Latest-post-list-wrap">
+                                    <div class="section">
+                                        <div class="single-post-wrap">
+                                            <div class="thumb">
+                                                <img src="image/new1.png" alt="img">
+                                            </div>
+                                            <div class="details">
+                                                <div class="post-meta-single mb-4 pt-1">
+                                                    <ul>
+                                                        <li class="hover"><a class="tag-base tag-blue" href="cat-tech.html">Tech</a></li>
+                                                        <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                    </ul>
+                                                </div>
+                                                <h6 class="title"><a href="blog-details.html">Uttarakhand’s Hemkund Sahib yatra to start from September 4</a></h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Latest-post-list-wrap">
+                                    <div class="section">
+                                        <div class="single-post-wrap">
+                                            <div class="thumb">
+                                                <img src="image/new1.png" alt="img">
+                                            </div>
+                                            <div class="details">
+                                                <div class="post-meta-single mb-4 pt-1">
+                                                    <ul>
+                                                        <li class="hover"><a class="tag-base tag-blue" href="cat-tech.html">Tech</a></li>
+                                                        <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                    </ul>
+                                                </div>
+                                                <h6 class="title"><a href="blog-details.html">Uttarakhand’s Hemkund Sahib yatra to start from September 4</a></h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
+
                     </div>
                     <div class="col-lg-3 col-sm-6" style="padding: 0px 15px;">
                         <div class="section-title">
@@ -579,23 +884,23 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="nxp-tab-inner nxp-tab-post text-md-right">
-                                        <ul class="nav" id="ex1" role="tablist">
-                                            <li class="nav-item" role="presentation">
-                                                <a class="nav-link active" id="ex1-tab-1" data-toggle="pill" href="#ex1-tabs-1" role="tab" aria-selected="true">
+                                        <ul class="nav-inner" id="ex1" role="tablist">
+                                            <li class="nav-item " data-filter="Game">
+                                                <a class="nav-link" id="ex1-tab-1" data-toggle="pill" href="#ex1-tabs-1" role="tab" aria-selected="true">
                                                     Game
                                                 </a>
                                             </li>
-                                            <li class="nav-item" role="presentation">
+                                            <li class="nav-item" data-filter="Politics">
                                                 <a class="nav-link" id="ex1-tab-2" data-toggle="pill" href="#ex1-tabs-2" role="tab" aria-selected="false">
                                                     Politics        
                                                 </a>
                                             </li>
-                                            <li class="nav-item" role="presentation">
+                                            <li class="nav-item" data-filter="Fashion">
                                                 <a class="nav-link" id="ex1-tab-3" data-toggle="pill" href="#ex1-tabs-3" role="tab" aria-selected="false">
                                                     Fashion        
                                                 </a>
                                             </li>
-                                            <li class="nav-item" role="presentation">
+                                            <li class="nav-item" data-filter="Tech">
                                                 <a class="nav-link" id="ex1-tab-4" data-toggle="pill" href="#ex1-tabs-4" role="tab" aria-selected="false">
                                                     Tech        
                                                 </a>
@@ -606,7 +911,7 @@
                             </div>
                         </div>
                         <div class="tab-content">
-                            <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel">
+                            <div class="tab-pane fade show active Game" data-filter="Game">
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="thumb mb-4">
@@ -614,7 +919,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="Latest-post-list-wrap">
+                                        <div class="Treding-post-list-wrap">
                                             <div class="Gallery">
                                                 <div class="gallery-left">
                                                     <img src="image/1.png" alt="img">
@@ -631,7 +936,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="Latest-post-list-wrap">
+                                        <div class="Treding-post-list-wrap">
                                             <div class="Gallery">
                                                 <div class="gallery-left">
                                                     <img src="image/2.png" alt="img">
@@ -648,7 +953,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="Latest-post-list-wrap">
+                                        <div class="Treding-post-list-wrap">
                                             <div class="Gallery">
                                                 <div class="gallery-left">
                                                     <img src="image/3.png" alt="img">
@@ -665,9 +970,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                     <div class="col-sm-6">
-                                        <div class="Latest-post-list-wrap">
+                                        <div class="Treding-post-list-wrap">
                                             <div class="Gallery">
                                                 <div class="gallery-left">
                                                     <img src="image/1.png" alt="img">
@@ -684,7 +989,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="Latest-post-list-wrap">
+                                        <div class="Treding-post-list-wrap">
                                             <div class="Gallery">
                                                 <div class="gallery-left">
                                                     <img src="image/2.png" alt="img">
@@ -701,7 +1006,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="Latest-post-list-wrap">
+                                        <div class="Treding-post-list-wrap">
                                             <div class="Gallery">
                                                 <div class="gallery-left">
                                                     <img src="image/3.png" alt="img">
@@ -718,8 +1023,353 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>        
-                                </div>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade  Politics" data-filter="Politics">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="thumb mb-4">
+                                            <img class="w-100" src="image/29.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/1.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/2.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/3.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/1.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/2.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/3.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade Fashion" data-filter="Fashion">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="thumb mb-4">
+                                            <img class="w-100" src="image/29.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/1.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/2.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/3.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/1.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/2.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/3.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade  Tech" data-filter="Tech">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="thumb mb-4">
+                                            <img class="w-100" src="image/29.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/1.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/2.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/3.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/1.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/2.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Treding-post-list-wrap">
+                                            <div class="Gallery">
+                                                <div class="gallery-left">
+                                                    <img src="image/3.png" alt="img">
+                                                </div>
+                                                <div class="gallery-body">
+                                                    <div class="details">
+                                                        <div class="post-meta-single">
+                                                            <ul>
+                                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                            </ul>
+                                                        </div>
+                                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -732,7 +1382,9 @@
                                 <div class="post-meta-single mb-3">
                                     <ul>
                                         <li><a class="tag-base tag-blue" href="cat-tech.html">Tech</a></li>
-                                        <li><p><i class="fa fa-clock-o"></i>08.22.2020</p></li>
+                                        <li>
+                                            <p><i class="fa fa-clock-o"></i>08.22.2020</p>
+                                        </li>
                                     </ul>
                                 </div>
                                 <h6 class="title"><a href="blog-details.html">A Comparison of the Sony FE 85mm f/1.4 GM and Sigma</a></h6>
@@ -746,7 +1398,9 @@
                                 <div class="post-meta-single mb-3">
                                     <ul>
                                         <li><a class="tag-base tag-blue" href="cat-tech.html">Tech</a></li>
-                                        <li><p><i class="fa fa-clock-o"></i>08.22.2020</p></li>
+                                        <li>
+                                            <p><i class="fa fa-clock-o"></i>08.22.2020</p>
+                                        </li>
                                     </ul>
                                 </div>
                                 <h6 class="title"><a href="blog-details.html">A Comparison of the Sony FE 85mm f/1.4 GM and Sigma</a></h6>
@@ -762,7 +1416,9 @@
                                 <div class="post-meta-single mb-3">
                                     <ul>
                                         <li><a class="tag-base tag-blue" href="cat-tech.html">Tech</a></li>
-                                        <li><p><i class="fa fa-clock-o"></i>08.22.2020</p></li>
+                                        <li>
+                                            <p><i class="fa fa-clock-o"></i>08.22.2020</p>
+                                        </li>
                                     </ul>
                                 </div>
                                 <h6 class="title"><a href="blog-details.html">A Comparison of the Sony FE 85mm f/1.4 GM and Sigma</a></h6>
@@ -776,7 +1432,9 @@
                                 <div class="post-meta-single mb-3">
                                     <ul>
                                         <li><a class="tag-base tag-blue" href="cat-tech.html">Tech</a></li>
-                                        <li><p><i class="fa fa-clock-o"></i>08.22.2020</p></li>
+                                        <li>
+                                            <p><i class="fa fa-clock-o"></i>08.22.2020</p>
+                                        </li>
                                     </ul>
                                 </div>
                                 <h6 class="title"><a href="blog-details.html">A Comparison of the Sony FE 85mm f/1.4 GM and Sigma</a></h6>
@@ -990,92 +1648,112 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="nxp-tab-inner nxp-tab-post-two mb-4">
-                            <ul class="nav nav-tabs" id="nx1" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="nx1-tab-1" data-toggle="pill" href="#nx1-tabs-1" role="tab" aria-selected="true">
+                            <ul class="nav nav-tabs " id="nx1" role="tablist">
+                                <li class="nav-item active" data-filter=".Recent">
+                                    <a class="nav-link " id="nx1-tab-1" data-toggle="pill" href="#nx1-tabs-1" role="tab" aria-selected="true">
                                         Recent
                                     </a>
                                 </li>
-                                <li class="nav-item" role="presentation">
+                                <li class="nav-item" data-filter=".Populer">
                                     <a class="nav-link" id="nx1-tab-2" data-toggle="pill" href="#nx1-tabs-2" role="tab" aria-selected="false">
                                         Populer        
                                     </a>
                                 </li>
-                                <li class="nav-item" role="presentation">
+                                <li class="nav-item" data-filter=".Comment">
                                     <a class="nav-link" id="nx1-tab-3" data-toggle="pill" href="#nx1-tabs-3" role="tab" aria-selected="false">
                                         Comment        
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="Latest-post-list-wrap" style="margin-bottom: 25px;">
-                            <div class="Gallery">
-                                <div class="gallery-left">
-                                    <img src="image/1.png" alt="img">
-                                </div>
-                                <div class="gallery-body">
-                                    <div class="details">
-                                        <div class="post-meta-single">
-                                            <ul>
-                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
-                                            </ul>
+                        <div class="portfolio-item">
+                            <div class="Latest-post-list-wrap Recent Populer" style="margin-bottom: 25px;">
+                                <div class="Gallery">
+                                    <div class="gallery-left">
+                                        <img src="image/1.png" alt="img">
+                                    </div>
+                                    <div class="gallery-body">
+                                        <div class="details">
+                                            <div class="post-meta-single">
+                                                <ul>
+                                                    <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                </ul>
+                                            </div>
+                                            <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
                                         </div>
-                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Latest-post-list-wrap Populer Recent" style="margin-bottom: 25px;">
+                                <div class="Gallery">
+                                    <div class="gallery-left">
+                                        <img src="image/2.png" alt="img">
+                                    </div>
+                                    <div class="gallery-body">
+                                        <div class="details">
+                                            <div class="post-meta-single">
+                                                <ul>
+                                                    <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                </ul>
+                                            </div>
+                                            <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Latest-post-list-wrap Recent Comment" style="margin-bottom: 25px;">
+                                <div class="Gallery">
+                                    <div class="gallery-left">
+                                        <img src="image/3.png" alt="img">
+                                    </div>
+                                    <div class="gallery-body">
+                                        <div class="details">
+                                            <div class="post-meta-single">
+                                                <ul>
+                                                    <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                </ul>
+                                            </div>
+                                            <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Latest-post-list-wrap Comment Recent Populer" style="margin-bottom: 25px;">
+                                <div class="Gallery">
+                                    <div class="gallery-left">
+                                        <img src="image/2.png" alt="img">
+                                    </div>
+                                    <div class="gallery-body">
+                                        <div class="details">
+                                            <div class="post-meta-single">
+                                                <ul>
+                                                    <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                </ul>
+                                            </div>
+                                            <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Latest-post-list-wrap Comment Populer" style="margin-bottom: 25px;">
+                                <div class="Gallery">
+                                    <div class="gallery-left">
+                                        <img src="image/3.png" alt="img">
+                                    </div>
+                                    <div class="gallery-body">
+                                        <div class="details">
+                                            <div class="post-meta-single">
+                                                <ul>
+                                                    <li><i class="fa fa-clock-o"></i>08.22.2020</li>
+                                                </ul>
+                                            </div>
+                                            <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="Latest-post-list-wrap" style="margin-bottom: 25px;">
-                            <div class="Gallery">
-                                <div class="gallery-left">
-                                    <img src="image/2.png" alt="img">
-                                </div>
-                                <div class="gallery-body">
-                                    <div class="details">
-                                        <div class="post-meta-single">
-                                            <ul>
-                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
-                                            </ul>
-                                        </div>
-                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Latest-post-list-wrap" style="margin-bottom: 25px;">
-                            <div class="Gallery">
-                                <div class="gallery-left">
-                                    <img src="image/3.png" alt="img">
-                                </div>
-                                <div class="gallery-body">
-                                    <div class="details">
-                                        <div class="post-meta-single">
-                                            <ul>
-                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
-                                            </ul>
-                                        </div>
-                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Latest-post-list-wrap" style="margin-bottom: 25px;">
-                            <div class="Gallery">
-                                <div class="gallery-left">
-                                    <img src="image/2.png" alt="img">
-                                </div>
-                                <div class="gallery-body">
-                                    <div class="details">
-                                        <div class="post-meta-single">
-                                            <ul>
-                                                <li><i class="fa fa-clock-o"></i>08.22.2020</li>
-                                            </ul>
-                                        </div>
-                                        <h6 class="title"><a href="blog-details.html">Himachal Pradesh rules in order to allow tourists </a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -1094,7 +1772,7 @@
                                     <div class="media">
                                         <div class="media-left">
                                             <img src="image/41.png" alt="img">
-                                            <a href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-play-btn play-btn-small play-btn-gray mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
+                                            <a data-fancybox href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-play-btn play-btn-small play-btn-gray mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
                                         </div>
                                         <div class="media-body align-self-center">
                                             <div class="details">
@@ -1116,7 +1794,7 @@
                                     <div class="media">
                                         <div class="media-left">
                                             <img src="image/42.png" alt="img">
-                                            <a href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-play-btn play-btn-small play-btn-gray mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
+                                            <a data-fancybox href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-play-btn play-btn-small play-btn-gray mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
                                         </div>
                                         <div class="media-body align-self-center">
                                             <div class="details">
@@ -1138,7 +1816,7 @@
                                     <div class="media">
                                         <div class="media-left">
                                             <img src="image/43.png" alt="img">
-                                            <a href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-play-btn play-btn-small play-btn-gray mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
+                                            <a data-fancybox href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-play-btn play-btn-small play-btn-gray mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
                                         </div>
                                         <div class="media-body align-self-center">
                                             <div class="details">
@@ -1160,7 +1838,7 @@
                                     <div class="media">
                                         <div class="media-left">
                                             <img src="image/44.png" alt="img">
-                                            <a href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-play-btn play-btn-small play-btn-gray mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
+                                            <a data-fancybox href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-play-btn play-btn-small play-btn-gray mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
                                         </div>
                                         <div class="media-body align-self-center">
                                             <div class="details">
@@ -1206,7 +1884,7 @@
                         <div class="single-post-wrap style-overlay">
                             <div class="thumb">
                                 <img src="image/video-image.png" alt="img">
-                                <a href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-play-btn play-btn-large play-btn-yellow mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
+                                <a data-fancybox href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-play-btn play-btn-large play-btn-yellow mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
                             </div>
                             <div class="details">
                                 <div class="post-meta-single">
@@ -1221,7 +1899,7 @@
                         <div class="single-post-wrap style-overlay">
                             <div class="thumb">
                                 <img src="image/video-image2.png" alt="img">
-                                <a href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-play-btn play-btn-large play-btn-yellow mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
+                                <a data-fancybox href="https://www.youtube.com/watch?v=WwvNiN2_Jlk" class="video-play-btn play-btn-large play-btn-yellow mfp-iframe" tabindex="0"><i class="fa fa-play"></i></a>
                             </div>
                             <div class="details">
                                 <div class="post-meta-single">
@@ -1248,7 +1926,7 @@
         <!-- Add Area End -->
 
         <!-- Trending Area Start -->
-        <section id="Trending">
+        <section id="Cloud">
             <div class="container">
                 <div class="row">
                     <div class="section-title style-two">
@@ -1257,29 +1935,29 @@
                                 <h6 class="title">Trending News</h6>
                             </div>
                             <div class="col-md-9 text-center text-md-right">
-                                <div class="nxp-tab-inner nxp-tab-post text-md-right text-center">
-                                    <ul class="nav nav-tabs" id="ex2" role="tablist">
-                                        <li class="nav-item" role="presentation">
+                                <div class="nxp-tab-widget nxp-tab-post text-md-right text-center">
+                                    <ul class="nav-trend" id="ex2" role="tablist">
+                                        <li class="nav-item" data-filter="Entertainment">
                                             <a class="nav-link" id="ex2-tab-1" data-toggle="pill" href="#ex2-tabs-1" role="tab" aria-selected="true">
                                                 Entertainment
                                             </a>
                                         </li>
-                                        <li class="nav-item" role="presentation">
+                                        <li class="nav-item" data-filter="Politics">
                                             <a class="nav-link" id="ex2-tab-2" data-toggle="pill" href="#ex2-tabs-2" role="tab" aria-selected="false">
                                                 Politics        
                                             </a>
                                         </li>
-                                        <li class="nav-item" role="presentation">
+                                        <li class="nav-item" data-filter="Fashion">
                                             <a class="nav-link" id="ex2-tab-3" data-toggle="pill" href="#ex2-tabs-3" role="tab" aria-selected="false">
                                                 Fashion        
                                             </a>
                                         </li>
-                                        <li class="nav-item" role="presentation">
+                                        <li class="nav-item" data-filter="Tech">
                                             <a class="nav-link" id="ex2-tab-4" data-toggle="pill" href="#ex2-tabs-4" role="tab" aria-selected="false">
                                                 Tech        
                                             </a>
                                         </li>
-                                        <li class="nav-item" role="presentation">
+                                        <li class="nav-item" data-filter="Shop">
                                             <a class="nav-link" id="ex2-tab-5" data-toggle="pill" href="#ex2-tabs-5" role="tab" aria-selected="false">
                                                 Shop        
                                             </a>
@@ -1290,7 +1968,7 @@
                         </div>
                     </div>
                     <div class="tab-content" id="ex2-content">
-                        <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel">
+                        <div class="tab-pane fade show active" data-filter="Entertainment">
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <div class="single-post-wrap style-overlay">
@@ -1360,9 +2038,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel">
+                        <div class="tab-pane fade" data-filter="Politics">
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <div class="single-post-wrap style-overlay">
@@ -1432,9 +2110,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>              
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="ex2-tabs-3" role="tabpanel">
+                        <div class="tab-pane fade" data-filter="Fashion">
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <div class="single-post-wrap style-overlay">
@@ -1504,9 +2182,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="ex2-tabs-4" role="tabpanel">
+                        <div class="tab-pane fade" data-filter="Tech">
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <div class="single-post-wrap style-overlay">
@@ -1576,9 +2254,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="ex2-tabs-5" role="tabpanel">
+                        <div class="tab-pane fade" data-filter="Shop">
                             <div class="row">
                                 <div class="col-lg-3 col-sm-6">
                                     <div class="single-post-wrap style-overlay">
@@ -1648,7 +2326,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1678,7 +2356,7 @@
                                         <a href="" class="youtube-icon"><i class="fab fa-youtube"></i></a>
                                     </li>
                                     <li>
-                                        <a href="" class="instagram-icon"><i class="fab fa-instagram"></i></a> 
+                                        <a href="" class="instagram-icon"><i class="fab fa-instagram"></i></a>
                                     </li>
                                     <li>
                                         <a href="" class="google-icon"><i class="fab fa-google-plus-g"></i></a>
@@ -1770,8 +2448,15 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

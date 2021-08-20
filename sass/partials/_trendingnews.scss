@@ -1,17 +1,17 @@
-#Trending{
+#Trending {
     padding-bottom: 50px;
     padding-top: 80px;
-    .container{
-        .row{
-            .single-post-wrap{
+    .container {
+        .row {
+            .single-post-wrap {
                 position: relative;
                 margin-bottom: 30px;
                 transition: 0.4s;
-                .thumb{
+                .thumb {
                     position: relative;
                     overflow: hidden;
                     border-radius: 5px;
-                    &::before{
+                    &::before {
                         content: "";
                         background: linear-gradient(to top, rgba(32, 22, 84, 0.38) 52%, rgba(0, 0, 100, 0));
                         height: 75%;
@@ -25,7 +25,7 @@
                         visibility: hidden;
                         opacity: 0;
                     }
-                    &::after{
+                    &::after {
                         content: "";
                         background: linear-gradient(to top, rgba(32, 22, 84, 0.3) 52%, rgba(0, 0, 100, 0));
                         height: 70%;
@@ -37,13 +37,13 @@
                         z-index: 3;
                         transition: 0.4s;
                     }
-                    img{
+                    img {
                         transition: 0.8s;
                         transform: scale(1.01);
                         max-width: 100%;
                     }
                 }
-                .details{
+                .details {
                     position: absolute;
                     bottom: 0;
                     padding: 18px 18px;
@@ -51,14 +51,14 @@
                     margin: 15px;
                     background-color: rgba(255, 255, 255, 0.9);
                     border-radius: 8px;
-                    .post-meta-single{
-                        ul{
-                            li{
+                    .post-meta-single {
+                        ul {
+                            li {
                                 display: inline-block;
                                 margin: 0 6px;
                                 color: v$secondary-color;
                                 font-size: 14px;
-                                a{
+                                a {
                                     background: $primary-color;
                                     color: $third-color;
                                     font-family: $font-family;
@@ -70,60 +70,65 @@
                                     font-size: 15px;
                                     text-decoration: none;
                                 }
-                                p{
+                                p {
                                     margin-bottom: 0;
                                     margin-top: 16px;
                                     color: $secondary-color;
                                     font-size: $font-size;
                                     font-family: $font-family;
-                                    i{
+                                    i {
                                         margin-right: 5px;
                                     }
                                 }
                             }
                         }
                     }
-                    .title{
+                    .title {
                         color: $secondary-color;
                         font-family: $font-family;
                         font-weight: 500;
-                        a{
+                        a {
                             text-decoration: none;
                             text-decoration: none;
                             outline: none;
                             color: inherit;
                             line-height: 25px;
                             transition: linear 0.3s;
-                            &:hover{
+                            &:hover {
                                 color: $primary-color;
                             }
                         }
                     }
                 }
             }
-            .section-title{
+            .section-title {
                 padding-bottom: 15px;
                 position: relative;
-                .title{
+                .title {
                     margin-bottom: 0;
                     font-size: 20px;
                     display: inline-block;
                     color: $secondary-color;
                     font-weight: 500;
                     font-family: $font-family;
-
                 }
-                .nxp-tab-inner{
+                .nxp-tab-inner {
                     text-align: right!important;
                     // display: flex;
                     // justify-content: flex-end;
-                    .nav{
+                    .nav-inner {
                         display: inline-block;
                         border: none;
-                        .nav-item{
+                        .active{
+                            
+                            a{
+                                color: #097bed !important;
+                            }
+                        }
+                        .nav-item {
                             margin: 0 10px;
                             display: inline-block;
-                            .nav-link{
+                            .nav-link {
                                 color: #495057;
                                 display: inline-block;
                                 overflow: hidden;
@@ -131,7 +136,7 @@
                                 padding-bottom: 16px;
                                 font-family: $font-family;
                                 transition: linear 0.3s;
-                                &:hover{
+                                &:hover {
                                     color: $primary-color;
                                 }
                             }
@@ -139,43 +144,51 @@
                     }
                 }
             }
-            .tab-content{
-                .tab-pane{
-                    .row{
-                        .thumb{
-                            img{
+
+            .tab-content {
+
+                // .fade{
+                //     opacity: 0;
+                //     transition: opacity .15s linear;
+                // }
+                .show{
+                    opacity: 1;
+                }
+                .tab-pane {
+                    .row {
+                        .thumb {
+                            img {
                                 max-width: 100%;
                             }
                         }
-                        .Latest-post-list-wrap{
+                        .Treding-post-list-wrap {
                             margin-bottom: 17px;
-                            .Gallery{
+                            .Gallery {
                                 display: flex;
-                                .gallery-left{
+                                .gallery-left {
                                     margin-right: 13px;
                                     position: relative;
-                                    img{
+                                    img {
                                         max-width: 75px;
                                     }
                                 }
-                                .gallery-body{
-                                    .details{
-                                        .post-meta-single{
-                                            ul{
+                                .gallery-body {
+                                    .details {
+                                        .post-meta-single {
+                                            ul {
                                                 margin-bottom: 10px;
-                                                li{
+                                                li {
                                                     font-size: 14px;
                                                     color: #201654;
                                                     font-family: $font-family;
-                                                    i{
+                                                    i {
                                                         margin-right: 5px;
                                                     }
                                                 }
                                             }
                                         }
-                                        .title{
-                                            
-                                            a{
+                                        .title {
+                                            a {
                                                 text-decoration: none;
                                                 color: #201654;
                                                 font-weight: 500;
@@ -195,36 +208,25 @@
         }
     }
 }
+
 @media screen and (max-width: 1200px) {
-
-
-.order-xl-1{
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-}
-.order-xl-12{
-    order: 12;
-}
-.thumb{
-    img{
-        width: 100%;
+    .order-xl-1 {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .order-xl-12 {
+        order: 12;
+    }
+    .thumb {
+        img {
+            width: 100%;
+        }
     }
 }
 
+@media screen and (max-width: 992px) {}
 
-}
+@media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 992px) {
-
-
-}
-
-
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 576px) {
-
-}
+@media screen and (max-width: 576px) {}

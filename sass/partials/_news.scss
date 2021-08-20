@@ -1,26 +1,24 @@
-#news{
-    padding:24px 0px 70px 23px;
-    .container{
-
-        .row{
-            .single-post-wrap{
+#news {
+    padding: 24px 0px 70px 23px;
+    .container {
+        .row {
+            .single-post-wrap {
                 position: relative;
                 margin-bottom: 30px;
                 transition: 0.4s;
-                &:hover .thumb img{
+                &:hover .thumb img {
                     transform: scale(1.06);
-
                 }
-                &:hover .thumb::before{
+                &:hover .thumb::before {
                     visibility: visible;
                     opacity: 1;
                 }
-                .thumb{
+                .thumb {
                     position: relative;
                     margin-bottom: 27px;
                     overflow: hidden;
                     border-radius: 5px;
-                    &::after{
+                    &::after {
                         content: "";
                         background: linear-gradient(to top, rgba(32, 22, 84, 0.6) 52%, rgba(0, 0, 100, 0));
                         height: 70%;
@@ -32,7 +30,7 @@
                         z-index: 3;
                         transition: 0.4s;
                     }
-                    &::before{
+                    &::before {
                         content: "";
                         background: linear-gradient(to top, rgba(32, 22, 84, 0.38) 52%, rgba(0, 0, 100, 0));
                         height: 75%;
@@ -46,12 +44,12 @@
                         visibility: hidden;
                         opacity: 0;
                     }
-                    img{
+                    img {
                         max-width: 100%;
                         transition: 0.8s;
                         transform: scale(1.01);
                     }
-                    .tag-base{
+                    .tag-base {
                         position: absolute;
                         left: 17px;
                         top: 19px;
@@ -66,48 +64,47 @@
                         border-radius: 3px;
                         font-size: 15px;
                         font-family: $font-family;
-                      
                     }
                 }
-                .details{
+                .details {
                     position: absolute;
                     bottom: 0;
                     padding: 18px 20px;
                     z-index: 4;
-                    .post-meta-single{
+                    .post-meta-single {
                         margin-bottom: 8px;
-                        p{
+                        p {
                             line-height: 20px;
                             color: $third-color;
                             font-size: $font-size;
                             font-family: $font-family;
-                            i{
+                            i {
                                 margin-right: 5px;
                             }
                         }
                     }
-                    .title{
+                    .title {
                         color: $third-color;
                         font-weight: 500;
                         font-family: $font-family;
-                        a{
+                        a {
                             text-decoration: none;
                             color: $third-color;
                             line-height: 33px;
                             font-size: 24px;
                             transition: linear 0.4s;
-                            &:hover{
+                            &:hover {
                                 color: #FFBE00;
-                              }
+                            }
                         }
                     }
                 }
             }
-            .Latest-title{
+            .Latest-title {
                 border-bottom: 1px solid #b3b3b3;
                 padding-bottom: 15px;
                 position: relative;
-                .title{
+                .title {
                     margin-bottom: 0;
                     font-size: 20px;
                     display: inline-block;
@@ -116,35 +113,34 @@
                     font-weight: 500;
                 }
             }
-            .Latest-post-list-wrap{
+            .Latest-post {
                 margin-bottom: 17px;
-                .Gallery{
+                .Gallery {
                     display: flex;
-                    .gallery-left{
+                    .gallery-left {
                         margin-right: 13px;
                         position: relative;
-                        img{
+                        img {
                             max-width: 75px;
                         }
                     }
-                    .gallery-body{
-                        .details{
-                            .post-meta-single{
-                                ul{
+                    .gallery-body {
+                        .details {
+                            .post-meta-single {
+                                ul {
                                     margin-bottom: 10px;
-                                    li{
+                                    li {
                                         font-size: 14px;
                                         color: #201654;
                                         font-family: $font-family;
-                                        i{
+                                        i {
                                             margin-right: 5px;
                                         }
                                     }
                                 }
                             }
-                            .title{
-                                
-                                a{
+                            .title {
+                                a {
                                     text-decoration: none;
                                     color: #201654;
                                     font-weight: 500;
@@ -158,12 +154,12 @@
                     }
                 }
             }
-            .custom-gutters-14{
+            .custom-gutters-14 {
                 padding: 0 8px;
-                .single-category-inner{
+                .single-category-inner {
                     position: relative;
                     margin-bottom: 15px;
-                    &::after{
+                    &::after {
                         content: "";
                         background: rgba(0, 0, 0, 0.5);
                         height: 100%;
@@ -175,11 +171,11 @@
                         z-index: 3;
                         transition: 0.4s;
                     }
-                    img{
+                    img {
                         max-width: 100%;
                         vertical-align: middle;
                     }
-                    .tag-base{
+                    .tag-base {
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
@@ -196,112 +192,72 @@
                         transition: linear 0.3s;
                         display: inline-block;
                         font-family: $font-family;
-                        &:hover{
+                        &:hover {
                             background: #0f68c0;
                         }
-                        
                     }
                 }
             }
         }
     }
 }
+
 @media screen and (max-width: 1200px) {
-    #news{
-        .container{
-    
-            .row{
-                .single-post-wrap{
-
-                    &:hover .thumb img{
-    
+    #news {
+        .container {
+            .row {
+                .single-post-wrap {
+                    &:hover .thumb img {}
+                    &:hover .thumb::before {}
+                    .thumb {
+                        &::after {}
+                        &::before {}
+                        img {}
+                        .tag-base {}
                     }
-                    &:hover .thumb::before{
-
-                    }
-                    .thumb{
-
-                        &::after{
- 
-                        }
-                        &::before{
-
-                        }
-                        img{
-
-                        }
-                        .tag-base{
-
-                          
-                        }
-                    }
-                    .details{
-
-                        .post-meta-single{
-                            p{
-
-                                i{
-                                }
+                    .details {
+                        .post-meta-single {
+                            p {
+                                i {}
                             }
                         }
-                        .title{
-
-                            a{
-
-                                &:hover{
-                                  }
+                        .title {
+                            a {
+                                &:hover {}
                             }
                         }
                     }
                 }
-                .Latest-title{
-
-                    .title{
-
-                    }
+                .Latest-title {
+                    .title {}
                 }
-                .Latest-post-list-wrap{
-                    .Gallery{
-                        .gallery-left{
-
-                            img{
-                            }
+                .Latest-post-list-wrap {
+                    .Gallery {
+                        .gallery-left {
+                            img {}
                         }
-                        .gallery-body{
-                            .details{
-                                .post-meta-single{
-                                    ul{
-                                        li{
-
-                                            i{
-                                            }
+                        .gallery-body {
+                            .details {
+                                .post-meta-single {
+                                    ul {
+                                        li {
+                                            i {}
                                         }
                                     }
                                 }
-                                .title{
-                                    
-                                    a{
-
-                                    }
+                                .title {
+                                    a {}
                                 }
                             }
                         }
                     }
                 }
-                .custom-gutters-14{
-                    .single-category-inner{
-
-                        &::after{
-
-                        }
-                        img{
-
-                        }
-                        .tag-base{
-
-                            &:hover{
-                            }
-                            
+                .custom-gutters-14 {
+                    .single-category-inner {
+                        &::after {}
+                        img {}
+                        .tag-base {
+                            &:hover {}
                         }
                     }
                 }
@@ -311,102 +267,61 @@
 }
 
 @media screen and (max-width: 992px) {
-
-    #news{
-        .container{
-    
-            .row{
-                .single-post-wrap{
-
-                    &:hover .thumb img{
-    
+    #news {
+        .container {
+            .row {
+                .single-post-wrap {
+                    &:hover .thumb img {}
+                    &:hover .thumb::before {}
+                    .thumb {
+                        &::after {}
+                        &::before {}
+                        img {}
+                        .tag-base {}
                     }
-                    &:hover .thumb::before{
-
-                    }
-                    .thumb{
-
-                        &::after{
- 
-                        }
-                        &::before{
-
-                        }
-                        img{
-
-                        }
-                        .tag-base{
-
-                          
-                        }
-                    }
-                    .details{
-
-                        .post-meta-single{
-                            p{
-
-                                i{
-                                }
+                    .details {
+                        .post-meta-single {
+                            p {
+                                i {}
                             }
                         }
-                        .title{
-
-                            a{
-
-                                &:hover{
-                                  }
+                        .title {
+                            a {
+                                &:hover {}
                             }
                         }
                     }
                 }
-                .Latest-title{
-
-                    .title{
-
-                    }
+                .Latest-title {
+                    .title {}
                 }
-                .Latest-post-list-wrap{
-                    .Gallery{
-                        .gallery-left{
-
-                            img{
-                            }
+                .Latest-post-list-wrap {
+                    .Gallery {
+                        .gallery-left {
+                            img {}
                         }
-                        .gallery-body{
-                            .details{
-                                .post-meta-single{
-                                    ul{
-                                        li{
-
-                                            i{
-                                            }
+                        .gallery-body {
+                            .details {
+                                .post-meta-single {
+                                    ul {
+                                        li {
+                                            i {}
                                         }
                                     }
                                 }
-                                .title{
-                                    
-                                    a{
-
-                                    }
+                                .title {
+                                    a {}
                                 }
                             }
                         }
                     }
                 }
-                .custom-gutters-14{
-                    .single-category-inner{
-
-                        &::after{
-
-                        }
-                        img{
-
-                        }
-                        .tag-base{
-
-                            &:hover{
-                            }
-                            
+                .custom-gutters-14 {
+                    .single-category-inner {
+                        &::after {}
+                        img {}
+                        .tag-base {
+                            &:hover {}
                         }
                     }
                 }
@@ -415,103 +330,62 @@
     }
 }
 
-
 @media screen and (max-width: 768px) {
-    #news{
-        .container{
-    
-            .row{
-                .single-post-wrap{
-
-                    &:hover .thumb img{
-    
+    #news {
+        .container {
+            .row {
+                .single-post-wrap {
+                    &:hover .thumb img {}
+                    &:hover .thumb::before {}
+                    .thumb {
+                        &::after {}
+                        &::before {}
+                        img {}
+                        .tag-base {}
                     }
-                    &:hover .thumb::before{
-
-                    }
-                    .thumb{
-
-                        &::after{
- 
-                        }
-                        &::before{
-
-                        }
-                        img{
-
-                        }
-                        .tag-base{
-
-                          
-                        }
-                    }
-                    .details{
-
-                        .post-meta-single{
-                            p{
-
-                                i{
-                                }
+                    .details {
+                        .post-meta-single {
+                            p {
+                                i {}
                             }
                         }
-                        .title{
-
-                            a{
-
-                                &:hover{
-                                  }
+                        .title {
+                            a {
+                                &:hover {}
                             }
                         }
                     }
                 }
-                .Latest-title{
-
-                    .title{
-
-                    }
+                .Latest-title {
+                    .title {}
                 }
-                .Latest-post-list-wrap{
-                    .Gallery{
-                        .gallery-left{
-
-                            img{
-                            }
+                .Latest-post-list-wrap {
+                    .Gallery {
+                        .gallery-left {
+                            img {}
                         }
-                        .gallery-body{
-                            .details{
-                                .post-meta-single{
-                                    ul{
-                                        li{
-
-                                            i{
-                                            }
+                        .gallery-body {
+                            .details {
+                                .post-meta-single {
+                                    ul {
+                                        li {
+                                            i {}
                                         }
                                     }
                                 }
-                                .title{
-                                    
-                                    a{
-
-                                    }
+                                .title {
+                                    a {}
                                 }
                             }
                         }
                     }
                 }
-                .custom-gutters-14{
-                    .single-category-inner{
-
-                        &::after{
-
-                        }
-                        img{
-
-                        }
-                        .tag-base{
-
-                            &:hover{
-                            }
-                            
+                .custom-gutters-14 {
+                    .single-category-inner {
+                        &::after {}
+                        img {}
+                        .tag-base {
+                            &:hover {}
                         }
                     }
                 }
@@ -521,101 +395,64 @@
 }
 
 @media screen and (max-width: 576px) {
-    #news{
-        .container{
-    
-            .row{
-                .single-post-wrap{
-
-                    &:hover .thumb img{
-    
+    #news {
+        .container {
+            .row {
+                .single-post-wrap {
+                    &:hover .thumb img {}
+                    &:hover .thumb::before {}
+                    .thumb {
+                        &::after {}
+                        &::before {}
+                        img {}
+                        .tag-base {}
                     }
-                    &:hover .thumb::before{
-
-                    }
-                    .thumb{
-
-                        &::after{
- 
-                        }
-                        &::before{
-
-                        }
-                        img{
-
-                        }
-                        .tag-base{
-
-                          
-                        }
-                    }
-                    .details{
-
-                        .post-meta-single{
-                            p{
-
-                                i{
-                                }
+                    .details {
+                        .post-meta-single {
+                            p {
+                                i {}
                             }
                         }
-                        .title{
-
-                            a{
-
-                                &:hover{
-                                  }
+                        .title {
+                            a {
+                                font-size: 13px;
+                                &:hover {}
                             }
                         }
                     }
                 }
-                .Latest-title{
-
-                    .title{
-
-                    }
+                .Latest-title {
+                    .title {}
                 }
-                .Latest-post-list-wrap{
-                    .Gallery{
-                        .gallery-left{
-
-                            img{
-                            }
+                .Latest-post-list-wrap {
+                    .Gallery {
+                        .gallery-left {
+                            img {}
                         }
-                        .gallery-body{
-                            .details{
-                                .post-meta-single{
-                                    ul{
-                                        li{
-
-                                            i{
-                                            }
+                        .gallery-body {
+                            .details {
+                                .post-meta-single {
+                                    ul {
+                                        li {
+                                            i {}
                                         }
                                     }
                                 }
-                                .title{
-                                    
-                                    a{
-
-                                    }
+                                .title {
+                                    a {}
                                 }
                             }
                         }
                     }
                 }
-                .custom-gutters-14{
-                    .single-category-inner{
-
-                        &::after{
-
-                        }
-                        img{
+                .custom-gutters-14 {
+                    .single-category-inner {
+                        &::after {}
+                        img {
                             width: 100%;
                         }
-                        .tag-base{
-
-                            &:hover{
-                            }
-                            
+                        .tag-base {
+                            &:hover {}
                         }
                     }
                 }

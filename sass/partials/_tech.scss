@@ -321,6 +321,26 @@
                 position: relative;
                 margin-bottom: 55px;
                 .item{
+                    .slick-prev {
+                        display: block;
+                        position: absolute;
+                        top: -10%;
+                        left: 79%;
+                        &::before {
+                            color: blue;
+                            background: transparent;
+                        }
+                    }
+                    .slick-next {
+                        display: block;
+                        position: absolute;
+                        top: -10%;
+                        right: 1%;
+                        &::before {
+                            color: blue;
+                            background: transparent;
+                        }
+                    }
                     .trending-post{
                         .single-post-wrap{
                             margin-bottom: 25px;
@@ -457,6 +477,10 @@
                 .nav-tabs{
                     border: 1px solid #f1f3f5 !important;
                     line-height: 1;
+                    .active{
+                        background: #097bed !important;
+                        color: #fff !important;
+                    }
                     .nav-item{
                         margin: 0;
                         display: inline-block;
@@ -556,6 +580,7 @@
                  }
                 }
             }
+
         }
         .add-area{
             a{
